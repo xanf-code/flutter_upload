@@ -41,6 +41,7 @@ class _HomeState extends State<Home> {
         String downloadUrl = await snapshot.ref.getDownloadURL();
         setState(() {
           imgUrl = downloadUrl;
+          debugPrint(imgUrl);
         });
       });
     });
